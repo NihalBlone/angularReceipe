@@ -10,8 +10,9 @@ import { Component, Output , EventEmitter} from '@angular/core';
 export class AppHeaderComponent{
     @Output() feature = new EventEmitter<string>();
 
-    onSelect(feature: string){
-        this.feature.emit(feature);
+    onSelect(openTab: string){
+        console.log("I am clicked: " + openTab);
+        this.feature.emit(openTab);
     }
 
 }

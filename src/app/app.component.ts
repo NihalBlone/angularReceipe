@@ -10,6 +10,7 @@ export class AppComponent {
   loadedFeature = 'recipe'; 
 
   onNavigate(tab: string){
+    console.log("I am clicked: "+ tab);
     this.loadedFeature = tab;
   }
 }
